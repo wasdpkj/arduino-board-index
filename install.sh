@@ -46,9 +46,9 @@ if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # install random lib so the arduino IDE grabs a new library index
 # see: https://github.com/arduino/Arduino/issues/3535
-echo -n "UPDATE LIBRARY INDEX: "
-DEPENDENCY_OUTPUT=$(arduino --install-library USBHost > /dev/null 2>&1)
-if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
+#echo -n "UPDATE LIBRARY INDEX: "
+#DEPENDENCY_OUTPUT=$(arduino --install-library USBHost > /dev/null 2>&1)
+#if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # set the maximal compiler warning level
 echo -n "SET BUILD PREFERENCES: "
@@ -92,6 +92,7 @@ function build_platform()
 
   # get the last example in the array
   local last="${examples[@]:(-1)}"
+  
 
   # grab the platform info from array or bail if invalid
   if [[ ${main_platforms[$platform_key]} ]]; then
