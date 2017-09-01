@@ -24,11 +24,11 @@ wget https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz
 tar xf arduino-1.6.9-linux64.tar.xz
 mv arduino-1.6.9 $HOME/arduino_ide
 
-cd $HOME/arduino_ide/hardware
+#cd $HOME/arduino_ide/hardware
 #mkdir Microduino
 #cd Microduino
 # move this library to the arduino libraries folder
-ln -s $TRAVIS_BUILD_DIR/Microduino Microduino
+ln -s $TRAVIS_BUILD_DIR/Microduino $HOME/arduino_ide/hardware/Microduino
 
 echo ls
 
