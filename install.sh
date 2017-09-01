@@ -152,7 +152,8 @@ function build_platform()
       last_example=1
     fi
 
-    echo -n "$example_dir\n"
+    echo -n "$example_dir"
+    echo -e "\v";
     echo -n "$example_file: "
 
     # continue to next example if platform switch failed
