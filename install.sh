@@ -28,7 +28,7 @@ mv arduino-1.6.9 $HOME/arduino_ide
 #mkdir Microduino
 #cd Microduino
 # move this library to the arduino libraries folder
-ln -s $TRAVIS_BUILD_DIR/libraries/* $HOME/arduino_ide
+ln -s $TRAVIS_BUILD_DIR/libraries/* $HOME/arduino_ide/libraries
 
 echo -e "\n########################################################################";
 echo $HOME/arduino_ide/libraries/*
