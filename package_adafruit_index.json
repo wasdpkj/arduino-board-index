@@ -208,54 +208,6 @@
       ],
       "email": "info@adafruit.com",
       "name": "adafruit"
-    },
-    {
-      "maintainer": "Ralf Kistner",
-      "help": {
-        "online": "https://forums.adafruit.com"
-      },
-      "websiteURL": "https://github.com/rkistner/arcore",
-      "platforms": [
-        {
-          "category": "Adafruit",
-          "help": {
-            "online": "https://forums.adafruit.com"
-          },
-          "url": "https://adafruit.github.io/arduino-board-index/boards/arcore-1.0.0.tar.bz2",
-          "checksum": "SHA-256:37ec329c16cc5d8f7da810665505107b24d85e6eea7e74d1677615cf7c5bcb01",
-          "version": "1.0.0",
-          "architecture": "avr",
-          "archiveFileName": "arcore-1.0.0.tar.bz2",
-          "boards": [
-            {
-              "name": "Arduino Leonardo (MIDI)"
-            },
-            {
-              "name": "Arduino Leonardo (MIDI, iPad compatible)"
-            },
-            {
-              "name": "Arduino Micro (MIDI)"
-            }
-          ],
-          "size": "1135927",
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "version": "4.8.1-arduino5",
-              "name": "avr-gcc"
-            },
-            {
-              "packager": "arduino",
-              "version": "6.0.1-arduino5",
-              "name": "avrdude"
-            }
-          ],
-          "name": "Leonardo & Micro MIDI-USB (arcore)"
-        }
-      ],
-      "tools": [],
-      "email": "ralf@journeyapps.com",
-      "name": "arcore"
     }
   ]
 }
