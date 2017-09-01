@@ -1,0 +1,101 @@
+# Adafruit Trinket, Flora, Gemma Board Configuration
+#
+# For more information see:
+# - https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
+# - https://github.com/arduino/Arduino/wiki/Arduino-Hardware-Cores-migration-guide-from-1.0-to-1.6
+#
+
+##############################################################
+## ATmega328 16M
+16MHzatmega328.name=Microduino/mCookie-Core (328p)@16M,5V
+16MHzatmega328.bootloader.low_fuses=0xFF
+16MHzatmega328.bootloader.high_fuses=0xDE
+16MHzatmega328.bootloader.extended_fuses=0x05
+16MHzatmega328.bootloader.file=optiboot/optiboot_micro_328p_16m.hex
+16MHzatmega328.bootloader.unlock_bits=0x3F
+16MHzatmega328.bootloader.lock_bits=0x0F
+16MHzatmega328.bootloader.tool=avrdude
+16MHzatmega328.build.mcu=atmega328p
+16MHzatmega328.build.f_cpu=16000000L
+16MHzatmega328.build.core=arduino
+16MHzatmega328.build.variant=standard
+16MHzatmega328.build.board=AVR_PRO
+16MHzatmega328.upload.tool=avrdude
+16MHzatmega328.upload.protocol=arduino
+16MHzatmega328.upload.maximum_size=32256
+16MHzatmega328.upload.maximum_data_size=2048
+16MHzatmega328.upload.speed=115200
+
+##############################################################
+## ATmega644 16M
+16MHzatmega644.name=Microduino/mCookie-Core+ (644pa)@16M,5V
+16MHzatmega644.bootloader.low_fuses=0xFF
+16MHzatmega644.bootloader.high_fuses=0xDE
+16MHzatmega644.bootloader.extended_fuses=0xFD
+16MHzatmega644.bootloader.file=optiboot/optiboot_micro_644pa_16m.hex
+16MHzatmega644.bootloader.unlock_bits=0x3F
+16MHzatmega644.bootloader.lock_bits=0x0F
+16MHzatmega644.bootloader.tool=avrdude
+16MHzatmega644.build.mcu=atmega644p
+16MHzatmega644.build.f_cpu=16000000L
+16MHzatmega644.build.core=arduino
+16MHzatmega644.build.variant=plus
+16MHzatmega644.build.board=AVR_PLUS
+16MHzatmega644.upload.tool=avrdude
+16MHzatmega644.upload.protocol=arduino
+16MHzatmega644.upload.maximum_size=64512
+16MHzatmega644.upload.maximum_data_size=4096
+16MHzatmega644.upload.speed=115200
+
+##############################################################
+## ATmega1284 16M
+16MHzatmega1284.name=Microduino/mCookie-Core+ (1284pa)@16M,5V
+16MHzatmega1284.bootloader.low_fuses=0xFF
+16MHzatmega1284.bootloader.high_fuses=0xDE
+16MHzatmega1284.bootloader.extended_fuses=0xFD
+16MHzatmega1284.bootloader.file=optiboot/optiboot_micro_1284_16m.hex
+16MHzatmega1284.bootloader.unlock_bits=0x3F
+16MHzatmega1284.bootloader.lock_bits=0x0F
+16MHzatmega1284.bootloader.tool=avrdude
+16MHzatmega1284.build.mcu=atmega1284p
+16MHzatmega1284.build.f_cpu=16000000L
+16MHzatmega1284.build.core=arduino
+16MHzatmega1284.build.variant=plus
+16MHzatmega1284.build.board=AVR_PLUS
+16MHzatmega1284.upload.tool=avrdude
+16MHzatmega1284.upload.protocol=arduino
+16MHzatmega1284.upload.maximum_size=130048
+16MHzatmega1284.upload.maximum_data_size=16384
+16MHzatmega1284.upload.speed=115200
+
+
+##############################################################
+##Microduino Core USB
+usb32u416m.name=Microduino/mCookie-Core USB (32u4)
+usb32u416m.bootloader.low_fuses=0xff
+usb32u416m.bootloader.high_fuses=0xd8
+usb32u416m.bootloader.extended_fuses=0xcb
+usb32u416m.bootloader.file=caterina/Caterina.hex
+usb32u416m.bootloader.unlock_bits=0x3F
+usb32u416m.bootloader.lock_bits=0x2F
+usb32u416m.bootloader.tool=avrdude
+usb32u416m.build.mcu=atmega32u4
+usb32u416m.build.f_cpu=16000000L
+usb32u416m.build.vid=0x239A
+usb32u416m.build.pid=0x8001
+usb32u416m.build.core=arduino
+usb32u416m.build.variant=32u4
+usb32u416m.build.board=AVR_USB
+usb32u416m.build.usb_product="Microduino-Core USB"
+usb32u416m.build.usb_manufacturer="Microduino"
+usb32u416m.build.extra_flags={build.usb_flags}
+usb32u416m.upload.protocol=avr109
+usb32u416m.upload.maximum_size=28672
+usb32u416m.upload.speed=57600
+usb32u416m.upload.disable_flushing=true
+usb32u416m.upload.use_1200bps_touch=true
+usb32u416m.upload.wait_for_upload_port=true
+usb32u416m.upload.tool=avrdude
+usb32u416m.vid.0=0x239A
+usb32u416m.pid.0=0x8001
+
