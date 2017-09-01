@@ -47,13 +47,13 @@
           "toolsDependencies": [
             {
               "packager": "arduino",
-              "name": "avr-gcc",
-              "version": "4.9.2-atmel3.5.4-arduino2"
+              "version": "4.8.1-arduino5",
+              "name": "avr-gcc"
             },
             {
               "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.3.0-arduino9"
+              "version": "6.0.1-arduino5",
+              "name": "avrdude"
             }
           ],
           "name": "Adafruit AVR Boards"
@@ -113,12 +113,12 @@
             "online": "https://forums.adafruit.com"
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
-          "checksum": "SHA-256:CE777B36C9CB65ECE586F1CB9E8141BBF305426C7498EF638B70A6533F633712",
+          "checksum": "SHA-256:0198269A7E03F5C3633A6F3EAB373E2639E2821DDCE09BBDAC485E44B64FC272",
           "name": "Adafruit AVR Boards",
           "version": "1.4.9",
           "architecture": "avr",
           "archiveFileName": "adafruit-avr-1.4.9.zip",
-          "size": "453925",
+          "size": "453910",
           "toolsDependencies": [],
           "boards": [
             {

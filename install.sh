@@ -19,10 +19,10 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [trinket]="microduino:avr:trink
 sleep 3
 export DISPLAY=:1.0
 
-# download and install arduino 1.8.4
-wget https://downloads.arduino.cc/arduino-1.8.4-linux64.tar.xz
-tar xf arduino-1.8.4-linux64.tar.xz
-mv arduino-1.8.4 $HOME/arduino_ide
+# download and install arduino 1.6.9
+wget https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz
+tar xf arduino-1.6.9-linux64.tar.xz
+mv arduino-1.6.9 $HOME/arduino_ide
 
 # move this library to the arduino libraries folder
 ln -s $PWD $HOME/arduino_ide/libraries/Adafruit_Test_Library
