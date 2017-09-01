@@ -113,14 +113,17 @@
             "online": "https://forums.adafruit.com"
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
-          "checksum": "SHA-256:53E6D55BE610438C2DD309998C16475F5A0DC9DEFB4BF145231357BC60DA5D96",
+          "checksum": "SHA-256:9E7096C87EAC21261E4557A4015C8BFE51CA3E1AC949A66D1DB30E8E204E5399",
           "name": "Adafruit AVR Boards",
           "version": "1.4.9",
           "architecture": "avr",
           "archiveFileName": "adafruit-avr-1.4.9.zip",
-          "size": "755587",
+          "size": "798043",
           "toolsDependencies": [],
           "boards": [
+            {
+              "name": "Microduino/mCookie-Core (328p)@16M,5V"
+            },
             {
               "name": "Adafruit Flora"
             },

@@ -5,6 +5,7 @@ before_install:
 script:
   - build_platform adafruit:avr:protrinket5
   - build_platform adafruit:avr:protrinket5ftdi
+  - build_platform adafruit:avr:16MHzatmega328
   - build_platform adafruit:avr:protrinket3
   - build_platform adafruit:avr:protrinket3ftdi
 branches:
