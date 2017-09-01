@@ -1,0 +1,43 @@
+{
+  "packages": [
+    {
+      "maintainer": "Microduino",
+      "help": {
+        "online": "https://forums.adafruit.com"
+      },
+      "websiteURL": "https://adafruit.com",
+      "platforms": [
+        {
+          "category": "Microduino",
+          "help": {
+            "online": "https://forums.adafruit.com"
+          },
+          "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/microduino-avr-1.9.9.zip",
+          "checksum": "SHA-256:FFE3CE7D0D51966F21668E0ACC5001F875336AC3ABEF72B36ABEA52CADF8EE8B",
+          "name": "Microduino AVR Boards",
+          "version": "1.9.9",
+          "architecture": "avr",
+          "archiveFileName": "microduino-avr-1.9.9.zip",
+          "size": "343773",
+          "toolsDependencies": [],
+          "boards": [
+            {
+              "name": "Microduino Core (Atmega328P@16M,5V)"
+            },
+            {
+              "name": "Microduino Core (Atmega328P@8M,3.3V)"
+            },
+            {
+              "name": "Microduino Core+ (Atmega644PA@16M,5V)"
+            },
+            {
+              "name": "Microduino Core+ (Atmega644PA@8M,3.3V)"
+            }
+          ]
+        }
+      ],
+      "email": "pankejia@microduino.cc",
+      "name": "microduino"
+    }
+  ]
+}
