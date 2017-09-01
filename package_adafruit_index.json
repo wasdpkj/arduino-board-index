@@ -112,55 +112,6 @@
           "help": {
             "online": "https://forums.adafruit.com"
           },
-          "url": "https://adafruit.github.io/arduino-board-index/boards/adafruit-avr-1.4.8.tar.bz2",
-          "checksum": "SHA-256:447a72a86ce24664bd5912f407b2e5457a8274c29d2fbf34c830f3517609a811",
-          "name": "Adafruit AVR Boards",
-          "version": "1.4.8",
-          "architecture": "avr",
-          "archiveFileName": "adafruit-avr-1.4.8.tar.bz2",
-          "size": "640748",
-          "toolsDependencies": [],
-          "boards": [
-            {
-              "name": "Adafruit Flora"
-            },
-            {
-              "name": "Adafruit Gemma 8MHz"
-            },
-            {
-              "name": "Adafruit Bluefruit Micro"
-            },
-            {
-              "name": "Adafruit Feather 32u4"
-            },
-            {
-              "name": "Adafruit Metro"
-            },
-            {
-              "name": "Adafruit Pro Trinket 5V/16MHz (USB)"
-            },
-            {
-              "name": "Adafruit Pro Trinket 3V/12MHz (USB)"
-            },
-            {
-              "name": "Adafruit Pro Trinket 5V/16MHz (FTDI)"
-            },
-            {
-              "name": "Adafruit Pro Trinket 3V/12MHz (FTDI)"
-            },
-            {
-              "name": "Adafruit Trinket 8MHz"
-            },
-            {
-              "name": "Adafruit Trinket 16MHz"
-            }
-          ]
-        },
-        {
-          "category": "Adafruit",
-          "help": {
-            "online": "https://forums.adafruit.com"
-          },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
           "checksum": "SHA-256:53E6D55BE610438C2DD309998C16475F5A0DC9DEFB4BF145231357BC60DA5D96",
           "name": "Adafruit AVR Boards",
