@@ -28,9 +28,11 @@ mv arduino-1.6.9 $HOME/arduino_ide
 #mkdir Microduino
 #cd Microduino
 # move this library to the arduino libraries folder
-ln -s $TRAVIS_BUILD_DIR/Microduino $HOME/arduino_ide/hardware/Microduino
+ln -s $TRAVIS_BUILD_DIR/libraries $HOME/arduino_ide/libraries
 
-echo $HOME/arduino_ide/hardware/Microduino/*
+echo -e "\n########################################################################";
+echo $HOME/arduino_ide/libraries/*
+echo -e "########################################################################\n";
 
 # add the arduino CLI to our PATH
 export PATH="$HOME/arduino_ide:$PATH"
@@ -45,9 +47,9 @@ echo -n "ADD PACKAGE INDEX: "
 DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_adafruit_index.json" --save-prefs 2>&1)
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
-#echo -n "MICRODUINO AVR: "
-#DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
-#if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
+echo -n "MICRODUINO AVR: "
+DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
+if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # install random lib so the arduino IDE grabs a new library index
 # see: https://github.com/arduino/Arduino/issues/3535
