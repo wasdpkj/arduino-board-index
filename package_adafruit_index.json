@@ -47,13 +47,13 @@
           "toolsDependencies": [
             {
               "packager": "arduino",
-              "version": "4.8.1-arduino5",
-              "name": "avr-gcc"
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
             },
             {
               "packager": "arduino",
-              "version": "6.0.1-arduino5",
-              "name": "avrdude"
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
             }
           ],
           "name": "Adafruit AVR Boards"
@@ -113,12 +113,12 @@
             "online": "https://forums.adafruit.com"
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
-          "checksum": "SHA-256:BB8194A12FF15DB4F7AAF2080D4836EC2F79A786495AF66F9C7CB766952AB816",
+          "checksum": "SHA-256:CE777B36C9CB65ECE586F1CB9E8141BBF305426C7498EF638B70A6533F633712",
           "name": "Adafruit AVR Boards",
           "version": "1.4.9",
           "architecture": "avr",
           "archiveFileName": "adafruit-avr-1.4.9.zip",
-          "size": "374506",
+          "size": "453925",
           "toolsDependencies": [],
           "boards": [
             {
@@ -141,39 +141,6 @@
             },
             {
               "name": "Microduino/mCookie-Core USB (32u4)"
-            },
-            {
-              "name": "Adafruit Flora"
-            },
-            {
-              "name": "Adafruit Gemma 8MHz"
-            },
-            {
-              "name": "Adafruit Bluefruit Micro"
-            },
-            {
-              "name": "Adafruit Feather 32u4"
-            },
-            {
-              "name": "Adafruit Metro"
-            },
-            {
-              "name": "Adafruit Pro Trinket 5V/16MHz (USB)"
-            },
-            {
-              "name": "Adafruit Pro Trinket 3V/12MHz (USB)"
-            },
-            {
-              "name": "Adafruit Pro Trinket 5V/16MHz (FTDI)"
-            },
-            {
-              "name": "Adafruit Pro Trinket 3V/12MHz (FTDI)"
-            },
-            {
-              "name": "Adafruit Trinket 8MHz"
-            },
-            {
-              "name": "Adafruit Trinket 16MHz"
             }
           ]
         }

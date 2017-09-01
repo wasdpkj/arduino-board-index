@@ -3,7 +3,6 @@ sudo: false
 before_install:
   - source <(curl -SLs https://raw.githubusercontent.com/wasdpkj/arduino-board-index/gh-pages/install.sh)
 script:
-  - build_platform microduino:avr:protrinket5
   - build_platform microduino:avr:16MHzatmega328
   - build_platform microduino:avr:16MHzatmega644
   - build_platform microduino:avr:16MHzatmega1284
