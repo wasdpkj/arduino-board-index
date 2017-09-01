@@ -1,7 +1,7 @@
 language: c
 sudo: false
 before_install:
-  - source <(curl -SLs https://raw.githubusercontent.com/adafruit/travis-ci-arduino/master/install.sh)
+  - source <(curl -SLs https://raw.githubusercontent.com/wasdpkj/arduino-board-index/gh-pages/install.sh)
 script:
   - build_platform adafruit:avr:flora8
   - build_platform adafruit:avr:bluefruitmicro
