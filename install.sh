@@ -29,7 +29,7 @@ mv arduino-1.6.9 $HOME/arduino_ide
 #cd Microduino
 # move this library to the arduino libraries folder
 #ln -s $TRAVIS_BUILD_DIR/libraries/* $HOME/arduino_ide/libraries
-mv -f $TRAVIS_BUILD_DIR/libraries $HOME/arduino_ide/libraries
+mv -f $TRAVIS_BUILD_DIR/libraries/* $HOME/arduino_ide/libraries
 
 echo -e "\n########################################################################";
 echo $HOME/arduino_ide/libraries/*
@@ -96,6 +96,7 @@ function build_platform()
   declare -a examples
 
   # loop through results and add them to the array
+  #examples=($(find $PWD -name "*.pde" -o -name "*.ino"))
   examples=($(find $HOME/arduino_ide/libraries -name "*.pde" -o -name "*.ino"))
 
   # get the last example in the array
