@@ -13,12 +13,12 @@
             "online": "https://forums.adafruit.com"
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/microduino-avr-1.9.9.zip",
-          "checksum": "SHA-256:FFE3CE7D0D51966F21668E0ACC5001F875336AC3ABEF72B36ABEA52CADF8EE8B",
+          "checksum": "SHA-256:26D9D9AD3E46F8C2AC2D097AF22E6D9F715190F1F112C5F9AAE1D82B65B315BD",
           "name": "Microduino AVR Boards",
           "version": "1.9.9",
           "architecture": "avr",
           "archiveFileName": "microduino-avr-1.9.9.zip",
-          "size": "343773",
+          "size": "287368",
           "toolsDependencies": [],
           "boards": [
             {
