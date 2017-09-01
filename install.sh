@@ -30,7 +30,7 @@ mv arduino-1.6.9 $HOME/arduino_ide
 # move this library to the arduino libraries folder
 ln -s $TRAVIS_BUILD_DIR/Microduino $HOME/arduino_ide/hardware/Microduino
 
-echo ls
+echo $HOME/arduino_ide/hardware/Microduino/*
 
 # add the arduino CLI to our PATH
 export PATH="$HOME/arduino_ide:$PATH"
