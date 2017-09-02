@@ -12,38 +12,13 @@
           "help": {
             "online": "https://forums.adafruit.com"
           },
-          "url": "https://adafruit.github.io/arduino-board-index/boards/adafruit-1.1.0.tar.bz2",
-          "checksum": "SHA-256:4e72d4267d9a8d86874edcd021dc661854a5136c0eed947a6fe10366bc51e373",
-          "version": "1.1.0",
+          "url": "https://adafruit.github.io/arduino-board-index/boards/adafruit-avr-1.4.9.tar.bz2",
+          "checksum": "SHA-256:2fbc90df3cc0b95816ac39da262ddb6eac5c46e47374768bd7de7c99fac1f3dd",
+          "name": "Adafruit AVR Boards",
+          "version": "1.4.9",
           "architecture": "avr",
-          "archiveFileName": "adafruit-1.1.0.tar.bz2",
-          "boards": [
-            {
-              "name": "Adafruit Flora"
-            },
-            {
-              "name": "Adafruit Gemma 8MHz"
-            },
-            {
-              "name": "Adafruit Trinket 8MHz"
-            },
-            {
-              "name": "Adafruit Trinket 16MHz"
-            },
-            {
-              "name": "Pro Trinket 5V/16MHz (USB)"
-            },
-            {
-              "name": "Pro Trinket 3V/12MHz (USB)"
-            },
-            {
-              "name": "Pro Trinket 5V/16MHz (FTDI)"
-            },
-            {
-              "name": "Pro Trinket 3V/12MHz (FTDI)"
-            }
-          ],
-          "size": "29455",
+          "archiveFileName": "adafruit-avr-1.4.9.tar.bz2",
+          "size": "640425",
           "toolsDependencies": [
             {
               "packager": "arduino",
@@ -56,21 +31,6 @@
               "name": "avrdude"
             }
           ],
-          "name": "Adafruit AVR Boards"
-        },
-        {
-          "category": "Adafruit",
-          "help": {
-            "online": "https://forums.adafruit.com"
-          },
-          "url": "https://adafruit.github.io/arduino-board-index/boards/adafruit-avr-1.4.9.tar.bz2",
-          "checksum": "SHA-256:2fbc90df3cc0b95816ac39da262ddb6eac5c46e47374768bd7de7c99fac1f3dd",
-          "name": "Adafruit AVR Boards",
-          "version": "1.4.9",
-          "architecture": "avr",
-          "archiveFileName": "adafruit-avr-1.4.9.tar.bz2",
-          "size": "640425",
-          "toolsDependencies": [],
           "boards": [
             {
               "name": "Adafruit Flora"
