@@ -13,12 +13,12 @@
             "online": "https://wiki.microduino.cn"
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/for_travis/boards/microduino-avr-1.6.9.zip",
-          "checksum": "SHA-256:ee8c30d704051a2177b0584b8e51eef0844ea25b2079831df7b686494eb057cd",
+          "checksum": "SHA-256:9d31773b7a643f50f19a483d8d5651ae48689c6ad60a8b4de6fafd7b51e1699e",
           "name": "Microduino AVR Boards",
           "version": "1.6.9",
           "architecture": "avr",
           "archiveFileName": "microduino-avr-1.6.9.zip",
-          "size": "326947",
+          "size": "326776",
           "toolsDependencies": [
             {
               "packager": "arduino",
