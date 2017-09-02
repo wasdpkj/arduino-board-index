@@ -19,11 +19,11 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-echo "download and install arduino 1.6.9 pkj"
+echo "download and install arduino 1.6.10 pkj"
 
-wget https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz
-tar xf arduino-1.6.9-linux64.tar.xz
-mv arduino-1.6.9 $HOME/arduino_ide
+wget https://downloads.arduino.cc/arduino-1.6.10-linux64.tar.xz
+tar xf arduino-1.6.10-linux64.tar.xz
+mv arduino-1.6.10 $HOME/arduino_ide
 
 echo -e "\n-------------------------------------------------------------";
 echo -e $HOME/arduino_ide/*
@@ -54,13 +54,13 @@ echo "########################################################################";
 
 # install the due, esp8266, and microduino board packages
 echo -n "ADD PACKAGE INDEX: "
-DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/for_travis/package_microduino_index.json" --install-boards microduino:avr --save-prefs 2>&1)
+DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/for_travis/package_microduino_index.json" --save-prefs 2>&1)
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
-#echo -n "MICRODUINO AVR: "
-#DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
+echo -n "MICRODUINO AVR: "
+DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
 #DEPENDENCY_OUTPUT=$(arduino --install-boards "Microduino AVR Boards:avr")
-#if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
+if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # install random lib so the arduino IDE grabs a new library index
 # see: https://github.com/arduino/Arduino/issues/3535
