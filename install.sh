@@ -19,7 +19,8 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-# download and install arduino 1.6.9 pkj
+echo "download and install arduino 1.6.9 pkj"
+
 wget https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz
 tar xf arduino-1.6.9-linux64.tar.xz
 mv arduino-1.6.9 $HOME/arduino_ide
