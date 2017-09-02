@@ -23,7 +23,7 @@ echo "download and install arduino 1.8.3 YLB"
 wget https://downloads.arduino.cc/arduino-1.8.3-linux64.tar.xz
 tar xf arduino-1.8.3-linux64.tar.xz
 mv arduino-1.8.3 $HOME/arduino_ide
-wget https://raw.githubusercontent.com/$TRAVIS_REPO_SLUG/$TRAVIS_BRANCH/master/arduino-headless.sh -O $HOME/arduino_ide/arduino-headless.sh
+wget https://github.com/smay4finger/OSCGlove/raw/master/install-arduino.sh -O $HOME/arduino_ide/arduino-headless.sh
 chmod +x $HOME/arduino_ide/arduino-headless.sh
 
 
