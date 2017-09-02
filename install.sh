@@ -19,13 +19,11 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-echo -e "\n\n\nYLB-B12\n\n\n"
+echo -e "\n\n\nYLB-B16\n\n\n"
 
-echo "download and install arduino 1.8.3 YLB"
-wget https://downloads.arduino.cc/arduino-1.8.3-linux64.tar.xz
-tar xf arduino-1.8.3-linux64.tar.xz
-mv arduino-1.8.3 $HOME/arduino_ide
-wget https://raw.githubusercontent.com/fede2cr/travis-ci-arduino/master/arduino-headless.sh -O $HOME/arduino_ide/arduino-headless.sh
+echo "download and install arduino 1.8.4 YLB"
+wget https://downloads.arduino.cc/arduino-1.8.4-linux64.tar.xz
+tar xf arduino-1.8.4-linux64.tar.xz1.8.4ino/master/arduino-headless.sh -O $HOME/arduino_ide/arduino-headless.sh
 #chmod +x $HOME/arduino_ide/arduino-headless.sh
 
 
