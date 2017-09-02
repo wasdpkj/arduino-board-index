@@ -12,23 +12,13 @@
           "help": {
             "online": "https://wiki.microduino.cn"
           },
-<<<<<<< HEAD:package_adafruit_index.json
-          "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
-          "checksum": "SHA-256:9d31773b7a643f50f19a483d8d5651ae48689c6ad60a8b4de6fafd7b51e1699e",
-          "name": "Adafruit AVR Boards",
-          "version": "1.4.9",
-          "architecture": "avr",
-          "archiveFileName": "adafruit-avr-1.4.9.zip",
-          "size": "326776",
-=======
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/for_travis/boards/microduino-avr-1.6.9.zip",
-          "checksum": "SHA-256:A513027A9B579F3CEC54CD35BCD539D8453F346A1E6C119B9D7DD517505780C3",
+          "checksum": "SHA-256:2f4507be937842f932deda49af79e0549212c05357e682743b3425db4a3b46cd",
           "name": "Microduino AVR Boards",
           "version": "1.6.9",
           "architecture": "avr",
           "archiveFileName": "microduino-avr-1.6.9.zip",
-          "size": "328078",
->>>>>>> a91171bc482d4562d54f20133b429d6d98759bec:for_travis/package_microduino_index.json
+          "size": "326314",
           "toolsDependencies": [
             {
               "packager": "arduino",
