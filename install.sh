@@ -32,7 +32,8 @@ mv arduino-1.6.9 $HOME/arduino_ide
 rm -rf $HOME/arduino_ide/libraries
 mkdir -p $HOME/arduino_ide/libraries
 mv -f $TRAVIS_BUILD_DIR/libraries/* $HOME/arduino_ide/libraries
-#mv -f $TRAVIS_BUILD_DIR/libraries $HOME/arduino_ide/libraries
+#mv -f $TRAVIS_BUILD_DIR/libraries $HOME/arduino_i
+de/libraries
 
 echo -e "\n########################################################################";
 echo $HOME/arduino_ide/libraries/*
@@ -159,8 +160,7 @@ function build_platform()
       last_example=1
     fi
 
-    echo -n "$example_dir"
-    echo -e "\t";
+    echo -e "$example_dir \t#"
     echo -n "$example_file: "
 
     # continue to next example if platform switch failed
