@@ -24,9 +24,9 @@ wget https://downloads.arduino.cc/arduino-1.8.4-linux64.tar.xz
 tar xf arduino-1.8.4-linux64.tar.xz
 mv arduino-1.8.4 $HOME/arduino_ide
 
-echo -e "\n=============================================================";
+echo -e "\n-------------------------------------------------------------";
 echo -e $HOME/arduino_ide/*
-echo -e "=============================================================\n";
+echo -e "-------------------------------------------------------------\n";
 
 #cd $HOME/arduino_ide/hardware
 #mkdir Microduino
