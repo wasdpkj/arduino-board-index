@@ -23,6 +23,9 @@ echo "download and install arduino 1.8.3 YLB"
 wget https://downloads.arduino.cc/arduino-1.8.3-linux64.tar.xz
 tar xf arduino-1.8.3-linux64.tar.xz
 mv arduino-1.8.3 $HOME/arduino_ide
+wget https://raw.githubusercontent.com/$TRAVIS_REPO_SLUG/$TRAVIS_BRANCH/master/arduino-headless.sh -O $HOME/arduino_ide/arduino-headless.sh
+chmod +x $HOME/arduino_ide/arduino-headless.sh
+
 
 echo -e "\n-------------------------------------------------------------";
 echo -e $HOME/arduino_ide/*
@@ -54,15 +57,15 @@ echo "########################################################################";
 # install the due, esp8266, and microduino board packages
 echo -n "ADD PACKAGE INDEX: "
 #DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/for_travis/package_microduino_index.json" --save-prefs 2>&1)
-DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://adafruit.github.io/arduino-board-index/package_adafruit_index.json" --save-prefs 2>&1)
+DEPENDENCY_OUTPUT=$(arduino-headless.sh --pref "boardsmanager.additional.urls=https://adafruit.github.io/arduino-board-index/package_adafruit_index.json" --save-prefs 2>&1)
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 echo -n "ADAFRUIT AVR: "
-DEPENDENCY_OUTPUT=$(arduino --install-boards adafruit:avr 2>&1)
+DEPENDENCY_OUTPUT=$(arduino-headless.sh --install-boards adafruit:avr 2>&1)
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 echo -n "MICRODUINO AVR: "
-DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
+DEPENDENCY_OUTPUT=$(arduino-headless.sh --install-boards microduino:avr 2>&1)
 #DEPENDENCY_OUTPUT=$(arduino --install-boards "Microduino AVR Boards:avr")
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
@@ -74,7 +77,7 @@ if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # set the maximal compiler warning level
 echo -n "SET BUILD PREFERENCES: "
-DEPENDENCY_OUTPUT=$(arduino --pref "compiler.warning_level=all" --save-prefs 2>&1)
+DEPENDENCY_OUTPUT=$(arduino-headless.sh --pref "compiler.warning_level=all" --save-prefs 2>&1)
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # init the json temp var for the current platform
@@ -136,7 +139,7 @@ function build_platform()
   # we have to avoid reading the exit code of local:
   # "when declaring a local variable in a function, the local acts as a command in its own right"
   local platform_stdout
-  platform_stdout=$(arduino --board $platform --save-prefs 2>&1)
+  platform_stdout=$(arduino-headless.sh --board $platform --save-prefs 2>&1)
 
   # grab the exit status of the arduino board change
   local platform_switch=$?
@@ -248,7 +251,7 @@ function build_platform()
     # we have to avoid reading the exit code of local:
     # "when declaring a local variable in a function, the local acts as a command in its own right"
     local build_stdout
-    build_stdout=$(arduino --verify $example 2>&1)
+    build_stdout=$(arduino-headless.sh --verify $example 2>&1)
 
     # echo output if the build failed
     if [ $? -ne 0 ]; then
