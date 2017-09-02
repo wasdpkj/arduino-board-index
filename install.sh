@@ -19,10 +19,10 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-# download and install arduino 1.8.4
-wget https://downloads.arduino.cc/arduino-1.8.4-linux64.tar.xz
-tar xf arduino-1.8.4-linux64.tar.xz
-mv arduino-1.8.4 $HOME/arduino_ide
+# download and install arduino 1.6.9
+wget https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz
+tar xf arduino-1.6.9-linux64.tar.xz
+mv arduino-1.6.9 $HOME/arduino_ide
 
 #cd $HOME/arduino_ide/hardware
 #mkdir Microduino
@@ -101,7 +101,8 @@ function build_platform()
 
   # loop through results and add them to the array
   #examples=($(find $PWD -name "*.pde" -o -name "*.ino"))
-  examples=($(find $HOME/arduino_ide/libraries -name "*.pde" -o -name "*.ino"))
+  #examples=($(find $HOME/arduino_ide/libraries -name "*.pde" -o -name "*.ino"))
+  examples=($(find $HOME/arduino_ide/libraries -name "*.ino"))
 
   # get the last example in the array
   local last="${examples[@]:(-1)}"
@@ -159,7 +160,7 @@ function build_platform()
     fi
 
     echo -n "$example_dir"
-    echo -e "\v";
+    echo -e "\t";
     echo -n "$example_file: "
 
     # continue to next example if platform switch failed
@@ -212,27 +213,27 @@ function build_platform()
     fi
 
     # make sure that all examples are .ino files
-    if [[ $example =~ \.pde$ ]]; then
+    #if [[ $example =~ \.pde$ ]]; then
 
       # heavy X
-      echo -e "\xe2\x9c\x96"
+      #echo -e "\xe2\x9c\x96"
 
-      echo -e "-------------------------- DEBUG OUTPUT --------------------------\n"
-      echo "PDE EXTENSION. PLEASE UPDATE TO INO"
-      echo -e "\n------------------------------------------------------------------\n"
+      #echo -e "-------------------------- DEBUG OUTPUT --------------------------\n"
+      #echo "PDE EXTENSION. PLEASE UPDATE TO INO"
+      #echo -e "\n------------------------------------------------------------------\n"
 
       # add json
-      PLATFORM_JSON="${PLATFORM_JSON}$(json_sketch 0 $example_file $last_example)"
+      #PLATFORM_JSON="${PLATFORM_JSON}$(json_sketch 0 $example_file $last_example)"
 
       # increment fails
-      FAIL_COUNT=$((FAIL_COUNT + 1))
+      #FAIL_COUNT=$((FAIL_COUNT + 1))
 
       # mark as fail
-      exit_code=1
+      #exit_code=1
 
-      continue
+      #continue
 
-    fi
+    #fi
 
     # verify the example, and save stdout & stderr to a variable
     # we have to avoid reading the exit code of local:
