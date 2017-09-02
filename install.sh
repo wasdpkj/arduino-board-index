@@ -35,9 +35,9 @@ mv -f $TRAVIS_BUILD_DIR/libraries/* $HOME/arduino_ide/libraries
 #mv -f $TRAVIS_BUILD_DIR/libraries $HOME/arduino_i
 de/libraries
 
-echo -e "\n########################################################################";
-echo $HOME/arduino_ide/libraries/*
-echo -e "########################################################################\n";
+echo -e "\n=============================================================";
+echo -e $HOME/arduino_ide/libraries/*
+echo -e "=============================================================\n";
 
 # add the arduino CLI to our PATH
 export PATH="$HOME/arduino_ide:$PATH"
