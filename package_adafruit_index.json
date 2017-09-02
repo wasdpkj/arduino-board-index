@@ -13,12 +13,12 @@
             "online": "https://forums.adafruit.com"
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
-          "checksum": "SHA-256:293C0255627EEB0BE7A8D0B5417980A1782E9A69ED708F29F6B78EE7FB8D175C",
+          "checksum": "SHA-256:9d31773b7a643f50f19a483d8d5651ae48689c6ad60a8b4de6fafd7b51e1699e",
           "name": "Adafruit AVR Boards",
           "version": "1.4.9",
           "architecture": "avr",
           "archiveFileName": "adafruit-avr-1.4.9.zip",
-          "size": "326314",
+          "size": "326776",
           "toolsDependencies": [
             {
               "packager": "arduino",
