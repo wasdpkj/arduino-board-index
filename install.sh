@@ -19,10 +19,10 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-echo "download and install arduino 1.6.11 YLB"
-wget https://downloads.arduino.cc/arduino-1.6.11-linux64.tar.xz
-tar xf arduino-1.6.11-linux64.tar.xz
-mv arduino-1.6.11 $HOME/arduino_ide
+echo "download and install arduino 1.6.10 YLB"
+wget https://downloads.arduino.cc/arduino-1.6.10-linux64.tar.xz
+tar xf arduino-1.6.10-linux64.tar.xz
+mv arduino-1.6.10 $HOME/arduino_ide
 
 echo -e "\n-------------------------------------------------------------";
 echo -e $HOME/arduino_ide/*
