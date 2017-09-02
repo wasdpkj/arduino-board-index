@@ -12,7 +12,7 @@
           "help": {
             "online": "https://forums.adafruit.com"
           },
-          "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
+          "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/travis/adafruit-avr-1.4.9.zip",
           "checksum": "SHA-256:293C0255627EEB0BE7A8D0B5417980A1782E9A69ED708F29F6B78EE7FB8D175C",
           "name": "Adafruit AVR Boards",
           "version": "1.4.9",
