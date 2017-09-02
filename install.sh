@@ -8,11 +8,11 @@ fi
 
 # associative array for the platforms that will be verified in build_main_platforms()
 # this will be eval'd in the functions below because arrays can't be exported
-export MAIN_PLATFORMS='declare -A main_platforms=( [uno]="arduino:avr:uno" [due]="arduino:sam:arduino_due_x" [zero]="arduino:samd:zero" [16MHzatmega328]="microduino:avr:16MHzatmega328" [16MHzatmega644]="microduino:avr:16MHzatmega644" [16MHzatmega1284]="microduino:avr:16MHzatmega1284" [usb32u416m]="microduino:avr:usb32u416m" [leonardo]="arduino:avr:leonardo" )'
+export MAIN_PLATFORMS='declare -A main_platforms=( [uno]="arduino:avr:uno" [due]="arduino:sam:arduino_due_x" [zero]="arduino:samd:zero"[leonardo]="arduino:avr:leonardo" )'
 
 # associative array for other platforms that can be called explicitly in .travis.yml configs
 # this will be eval'd in the functions below because arrays can't be exported
-export AUX_PLATFORMS='declare -A aux_platforms=( [trinket]="microduino:avr:trinket5" [gemma]="arduino:avr:gemma" )'
+export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="microduino:avr:16MHzatmega328" [16MHzatmega644]="microduino:avr:16MHzatmega644" [16MHzatmega1284]="microduino:avr:16MHzatmega1284" [usb32u416m]="microduino:avr:usb32u416m" )'
 
 # make display available for arduino CLI
 /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_1.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :1 -ac -screen 0 1280x1024x16
