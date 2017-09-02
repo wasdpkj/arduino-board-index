@@ -19,7 +19,7 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-echo -e "\n\n\nYLB-B5！\n\n\n"
+echo -e "\n\n\nYLB-B6！\n\n\n"
 
 echo "download and install arduino 1.8.3 YLB"
 wget https://downloads.arduino.cc/arduino-1.8.3-linux64.tar.xz
