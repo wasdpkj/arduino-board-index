@@ -53,6 +53,16 @@ echo -e "\n#####################################################################
 echo "INSTALLING DEPENDENCIES"
 echo "########################################################################";
 
+echo -n "ADD PACKAGE INDEX-B: "
+DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_microduino_index.json" --save-prefs 2>&1)
+#DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_adafruit_index.json" --save-prefs 2>&1)
+if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
+
+echo -n "MICRODUINO AVR: "
+DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
+#DEPENDENCY_OUTPUT=$(arduino --install-boards "Microduino AVR Boards:avr")
+if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
+
 
 # install the due, esp8266, and microduino board packages
 echo -n "ADD PACKAGE INDEX-A: "
@@ -62,16 +72,6 @@ if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 echo -n "ADAFRUIT AVR: "
 DEPENDENCY_OUTPUT=$(arduino --install-boards adafruit:avr 2>&1)
-if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
-
-echo -n "ADD PACKAGE INDEX-B: "
-DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_microduino_index.json" --save-prefs 2>&1)
-#DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_adafruit_index.json" --save-prefs 2>&1)
-if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
-
-echo -n "MICRODUINO AVR: "
-DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
-#DEPENDENCY_OUTPUT=$(arduino --install-boards "Microduino AVR Boards:avr")
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # install random lib so the arduino IDE grabs a new library index
