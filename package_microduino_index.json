@@ -57,32 +57,6 @@
         }
       ],
       "tools": [
-        {
-          "version": "5_2-2015q4",
-          "name": "gcc-arm-none-eabi",
-          "systems": [
-            {
-              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90",
-              "host": "x86_64-pc-linux-gnu",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "size": "92811866"
-            }
-          ]
-        },
-        {
-          "version": "9.4.0",
-          "name": "nrfjprog",
-          "systems": [
-            {
-              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux64.tar.bz2",
-              "checksum": "MD5:da3c7b348e0c22766f175a4a9cca0d19",
-              "host": "x86_64-pc-linux-gnu",
-              "archiveFileName": "nrfjprog-9.4.0-linux64.tar.bz2",
-              "size": "190020"
-            }
-          ]
-        }
       ],  
       "email": "pankejia@microduino.cc",
       "name": "microduino"
