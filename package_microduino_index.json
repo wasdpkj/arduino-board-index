@@ -1,20 +1,20 @@
 {
   "packages": [
     {
-      "maintainer": "Adafruit",
+      "maintainer": "Microduino",
       "help": {
-        "online": "https://forums.adafruit.com"
+        "online": ""
       },
-      "websiteURL": "https://adafruit.com",
+      "websiteURL": "",
       "platforms": [
         {
-          "category": "Adafruit",
+          "category": "Microduino",
           "help": {
-            "online": "https://forums.adafruit.com"
+            "online": ""
           },
           "url": "https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/boards/adafruit-avr-1.4.9.zip",
           "checksum": "SHA-256:A513027A9B579F3CEC54CD35BCD539D8453F346A1E6C119B9D7DD517505780C3",
-          "name": "Adafruit AVR Boards",
+          "name": "Microduino AVR Boards",
           "version": "1.4.9",
           "architecture": "avr",
           "archiveFileName": "adafruit-avr-1.4.9.zip",
