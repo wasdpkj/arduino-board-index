@@ -20,9 +20,9 @@ sleep 3
 export DISPLAY=:1.0
 
 # download and install arduino 1.6.9
-wget https://downloads.arduino.cc/arduino-1.8.4-linux64.tar.xz
-tar xf arduino-1.8.4-linux64.tar.xz
-mv arduino-1.8.4 $HOME/arduino_ide
+wget https://downloads.arduino.cc/arduino-1.6.9-linux64.tar.xz
+tar xf arduino-1.6.9-linux64.tar.xz
+mv arduino-1.6.9 $HOME/arduino_ide
 
 #cd $HOME/arduino_ide/hardware
 #mkdir Microduino
@@ -53,7 +53,7 @@ if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 echo -n "MICRODUINO AVR: "
 #DEPENDENCY_OUTPUT=$(arduino --install-boards microduino:avr 2>&1)
-DEPENDENCY_OUTPUT=$(arduino --install-boards "Microduino AVR Boards:avr" 2>&1)
+DEPENDENCY_OUTPUT=$(arduino --install-boards "Microduino AVR Boards:avr")
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
 # install random lib so the arduino IDE grabs a new library index
