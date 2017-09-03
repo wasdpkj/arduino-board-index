@@ -3,10 +3,10 @@ sudo: false
 before_install:
   - source <(curl -SLs https://raw.githubusercontent.com/wasdpkj/arduino-board-index/gh-pages/install.sh)
 script:
-#  - build_platform microduino:avr:mddevice:cpu=16MHzatmega328
-  - build_platform microduino:avr:mddevice:cpu=16MHzatmega644
-#  - build_platform microduino:avr:mddevice:cpu=16MHzatmega1284
-#  - build_platform microduino:avr:mddevice:cpu=usb32u416m
+#  - build_platform core328
+  - build_platform coreplus644
+#  - build_platform coreplus1284
+#  - build_platform coreusb
 branches:
   only:
     - gh-pages
