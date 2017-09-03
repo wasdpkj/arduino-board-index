@@ -19,7 +19,7 @@ export AUX_PLATFORMS='declare -A aux_platforms=( [16MHzatmega328]="arduino:avr:u
 sleep 3
 export DISPLAY=:1.0
 
-echo -e "\n\n\nYLB-B20!\n\n\n"
+echo -e "\n\n\nYLB-B21!\n\n\n"
 
 echo "download and install arduino 1.8.4 YLB"
 wget https://downloads.arduino.cc/arduino-1.8.4-linux64.tar.xz
@@ -56,7 +56,7 @@ echo "INSTALLING DEPENDENCIES"
 echo "########################################################################";
 
 echo -n "ADD PACKAGE INDEX-B: "
-DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_microduino_index.json" --save-prefs 2>&1)
+DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/for_travis/package_microduino_index.json" --save-prefs 2>&1)
 #DEPENDENCY_OUTPUT=$(arduino --pref "boardsmanager.additional.urls=https://github.com/wasdpkj/arduino-board-index/raw/gh-pages/package_adafruit_index.json" --save-prefs 2>&1)
 if [ $? -ne 0 ]; then echo -e "\xe2\x9c\x96"; else echo -e "\xe2\x9c\x93"; fi
 
